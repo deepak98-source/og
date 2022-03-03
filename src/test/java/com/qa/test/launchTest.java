@@ -34,6 +34,8 @@ public class launchTest {
 public void launch(){
 
 }
+@Test
+public void sex(){}
 @AfterMethod
 public void clean(){
     driver.quit();
