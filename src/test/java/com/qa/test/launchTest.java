@@ -35,7 +35,7 @@ public void launch(){
 
 }
 @Test
-public void sex(){}
+public void dr(){}
 @AfterMethod
 public void clean(){
     driver.quit();
