@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -24,18 +25,19 @@ public class launchTest {
         driver = new ChromeDriver();
         driver.get("https://www.orangehrm.com/");
         driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-
-
-
-    }
-
+        driver.manage().deleteAllCookies();}
 @Test(priority = 1)
 public void launch(){
 
 }
-@Test
-public void dr(){}
+@Test(priority = 2)
+public void login(){
+    driver.findElement(By.id(""));
+    driver.findElement(By.xpath(""));
+    //Assert.assertEquals();
+}
+public void de(){}///git status
+
 @AfterMethod
 public void clean(){
     driver.quit();
